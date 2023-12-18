@@ -10,7 +10,7 @@ const isLoggedIn = async(req,res,next)=>{
         if(!token)
         {
             res.send('Please Login')
-            throw new Error('You are not logged in') //send a response and close next
+            throw new Error('You are not logged in')    //send a response and close next
         }
 
         const decoded =  jwt.verify(token, process.env.JWT_SECRET)
