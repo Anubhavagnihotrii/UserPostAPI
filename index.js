@@ -14,9 +14,11 @@ app.use(cookieParser())
 
 
 const userRouter = require('./routes/userRoute')
-
+const postRouter = require('./routes/postRoute')
 
 app.use('/api',userRouter)
+app.use('/api',postRouter)
+
 
 app.get('/',(req,res)=>{
     res.send("Hy from anubhav");

@@ -8,4 +8,3 @@ router.route('/login').post(login)
 router.route('/logout').get(logout)
 
 module.exports = router
-
